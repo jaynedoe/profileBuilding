@@ -1,0 +1,25 @@
+<%- include('partials/header') %>
+
+<div class="container">
+  <div class="jumbotron centered">
+    <i class="fas fa-key fa-6x"></i>
+    <h1 class="display-3">Edit Your Profile</h1>
+    <p class="secret-text">Build a form here to ask lots of questions and post back to server to be saved in Mongoose db.</p>
+
+    <form action="/edit" method="POST">
+
+      <div class="form-group">
+        <input type="text" class="form-control text-center" name="belief" placeholder="What's your belief?">
+      </div>
+
+      <div class="form-group">
+        <input type="text" class="form-control text-center" name="firstName" id="first-name" placeholder="Please enter your first name.">
+      </div>
+
+      <button type="submit" class="btn btn-dark">Submit</button>
+    </form>
+
+
+  </div>
+</div>
+<%- include('partials/footer') %>

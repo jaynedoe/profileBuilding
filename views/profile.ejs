@@ -1,0 +1,23 @@
+<%- include('partials/header') %>
+
+<div class="jumbotron text-center">
+  <div class="container">
+    <i class="fas fa-key fa-6x"></i>
+
+
+
+
+    <h1 class="display-3">Hello, <%= foundUser.firstName %></h1>
+      
+
+
+    <hr>
+
+    <p><%= foundUser.belief %></p>
+    
+    <a class="btn btn-light btn-lg" href="/logout" role="button">Log Out</a>
+    <a class="btn btn-dark btn-lg" href="/edit" role="button">Edit Profile</a>
+  </div>
+</div>
+
+<%- include('partials/footer') %>
